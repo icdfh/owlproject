@@ -1,0 +1,34 @@
+.owl-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: fly 20s infinite ease-in-out; /* Увеличено время анимации */
+    z-index: 1000;
+    pointer-events: none; /* Чтобы анимация не мешала кликам по сайту */
+}
+
+.owl {
+    width: 100px; /* Размер совы */
+    height: auto;
+}
+
+@keyframes fly {
+    0% {
+        transform: translate(0, 0); /* Начальная позиция */
+    }
+    20% {
+        transform: translate(50vw, -20vh); /* Перемещается к середине сайта */
+    }
+    40% {
+        transform: translate(100vw, 50vh); /* Перемещается вправо и вниз */
+    }
+    60% {
+        transform: translate(50vw, 80vh); /* Перемещается к низу */
+    }
+    80% {
+        transform: translate(0vw, 50vh); /* Возвращается влево */
+    }
+    100% {
+        transform: translate(0, 0); /* Возвращается в начальную позицию */
+    }
+}

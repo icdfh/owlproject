@@ -1,0 +1,131 @@
+/* Основной контейнер */
+body{
+    overflow: auto;
+}
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    justify-content: center; /* Центрируем содержимое по вертикали */
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh; /* Занимаем всю высоту экрана */
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border-radius: 10px;
+}
+
+/* Заголовок */
+.home-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    
+}
+
+/* Описание */
+.home-description {
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 800px; /* Ограничиваем ширину текста */
+    color: #f0f0f0;
+    font: bolder;
+}
+
+/* Секция с QR-кодом */
+.qr-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Расстояние между заголовком и изображением */
+    margin-bottom: 100px;
+}
+
+/* Заголовок Instagram */
+.qr-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* QR-код */
+.qr-code {
+    width: 250px;
+    height: 250px;
+    border: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.qr-code img{
+    width: 50px;
+    height: 50px;
+}
+
+.qr-code:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1024px) {
+    .home-container {
+        padding: 15px; /* Уменьшаем отступы */
+    }
+
+    .home-title {
+        font-size: 32px; /* Уменьшение заголовка */
+    }
+
+    .home-description {
+        font-size: 16px; /* Уменьшение текста описания */
+    }
+
+    .qr-section {
+        gap: 10px; /* Уменьшаем расстояние между элементами */
+    }
+
+    .qr-code {
+        max-width: 150px; /* Уменьшение QR-кода */
+    }
+}
+
+/* --- Адаптация для мобильных устройств (до 768px) --- */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 10px; /* Ещё меньше отступы */
+    }
+
+    .home-title {
+        font-size: 28px; /* Уменьшаем размер заголовка */
+    }
+
+    .home-description {
+        font-size: 14px; /* Уменьшаем текст */
+        line-height: 1.4; /* Уменьшаем межстрочный интервал */
+    }
+
+    .qr-section {
+        gap: 8px; /* Ещё меньше расстояние между элементами */
+    }
+
+    .qr-code {
+        max-width: 120px; /* Уменьшаем QR-код */
+        max-height: 120px;
+    }
+}
+
+/* --- Адаптация для очень маленьких экранов (до 480px) --- */
+@media (max-width: 480px) {
+    .home-title {
+        font-size: 24px; /* Минимальный размер заголовка */
+    }
+
+    .home-description {
+        font-size: 12px; /* Минимальный размер текста */
+    }
+
+    .qr-code {
+        max-width: 100px; /* Минимальный размер QR-кода */
+    }
+}

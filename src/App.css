@@ -1,0 +1,22 @@
+body {
+ 
+  font-family: Arial, sans-serif;
+  background: #f4f7fa; /* Лёгкий фон */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh; /* Устанавливаем высоту страницы */
+}
+
+/* Глобальный контейнер */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Центрируем содержимое */
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}

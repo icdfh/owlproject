@@ -1,0 +1,293 @@
+.admin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.admin-header h1 {
+    font-size: 32px;
+    margin: 0;
+}
+.admin-panel {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #f4f7fa;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-form input,
+.admin-form textarea,
+.admin-form select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus,
+.admin-form select:focus {
+    border-color: #2575fc;
+    outline: none;
+}
+
+.admin-form button {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Карточки разделов */
+.admin-sections {
+ 
+    display: flex;
+    flex-direction: column; /* Разделы располагаются вертикально */
+    align-items: center; /* Центрируем разделы по горизонтали */
+    justify-content: center; /* Центрируем разделы по вертикали */
+    gap: 20px; /* Расстояние между разделами */
+    min-height: calc(100vh - 100px); /* Высота контейнера с учётом Navbar */
+    padding: 20px;
+    background: #f4f7fa; /* Лёгкий фон */
+}
+
+.admin-section-card {
+    width: 80%; /* Ширина карточки */
+    max-width: 600px; /* Максимальная ширина карточки */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-section-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.admin-section-card h2 {
+    margin-top: 0;
+    color: #2575fc;
+    font-size: 24px;
+    text-align: center; 
+}
+
+.admin-section-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center; 
+}
+
+.admin-section-card button {
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admin-section-card button:hover {
+    background: #d32f2f;
+}
+.admin-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
+}
+
+.admin-section-card {
+    width: 80%; 
+    max-width: 600px; 
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.admin-section-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.admin-section-card h2 {
+    margin-top: 0;
+    color: #2575fc;
+    font-size: 24px; 
+    text-align: center; 
+}
+
+.admin-section-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6; 
+    text-align: center; 
+}
+
+
+.admin-section-card button {
+    background: #f44336;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.admin-section-card button:hover {
+    background: #d32f2f;
+}
+/* Поисковик */
+.search-input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #2575fc;
+    outline: none;
+}
+/* Общая стилизация для всех span в AdminPanel */
+.admin-form span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444; /* Тёмно-серый текст */
+    margin-right: 10px;
+    text-transform: uppercase; /* Преобразование текста к верхнему регистру */
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Стили для скроллбара */
+.admin-sections::-webkit-scrollbar {
+    width: 10px; /* Ширина скроллбара */
+}
+
+.admin-sections::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Цвет трека (фон скроллбара) */
+    border-radius: 5px;
+}
+
+.admin-sections::-webkit-scrollbar-thumb {
+    background: #2575fc; /* Цвет бегунка скроллбара */
+    border-radius: 5px;
+}
+
+.admin-sections::-webkit-scrollbar-thumb:hover {
+    background: #0056b3; /* Цвет бегунка при наведении */
+}
+
+/* Стили для Firefox */
+.admin-sections {
+    scrollbar-color: #2575fc #f0f0f0; /* Цвет бегунка и трека для Firefox */
+    scrollbar-width: thin; /* Тонкий скроллбар */
+}
+
+/* Карточки внутри скролла */
+.admin-section-card {
+    width: 100%; /* Ширина карточки адаптирована под контейнер */
+    max-width: 600px; /* Максимальная ширина карточки */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Анимация при наведении на карточку */
+.admin-section-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.color-picker-wrapper input[type="color"] {
+    appearance: none; /* Скрыть стандартное отображение */
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Круглая форма */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Анимация при наведении */
+.color-picker-wrapper input[type="color"]:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Анимация при фокусе */
+.color-picker-wrapper input[type="color"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 117, 252, 0.5);
+}
+.color-picker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Стили для заголовка */
+.color-picker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Расстояние между меткой и инпутом */
+}
+.color-pickers {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Расстояние между инпутами */
+    margin-bottom: 20px; /* Отступ снизу */
+}

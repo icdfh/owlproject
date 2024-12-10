@@ -1,0 +1,132 @@
+/* --- Основной стиль --- */
+.section-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Контент раздела */
+.section-content {
+    text-align: center;
+}
+
+/* Заголовок раздела */
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Текст раздела */
+.section-content {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Обёртка для изображения */
+.section-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Изображение раздела */
+.section-image {
+    max-width: 600px; /* Максимальная ширина изображения */
+    max-height: 400px; /* Максимальная высота изображения */
+    width: auto; /* Сохраняем пропорции */
+    height: auto; /* Сохраняем пропорции */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Кнопка ссылки */
+.section-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #2575fc;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 450px;
+}
+
+.section-link i {
+    margin-right: 10px;
+}
+
+.section-link:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* --- Адаптация для планшетов (от 768px до 1024px) --- */
+@media (max-width: 1024px) {
+    .section-title {
+        font-size: 30px; /* Уменьшение размера заголовка */
+    }
+
+    .section-content {
+        font-size: 16px; /* Уменьшение текста */
+    }
+
+    .section-image {
+        max-width: 500px; /* Уменьшение размера изображения */
+        max-height: 300px; /* Уменьшение максимальной высоты */
+    }
+
+    .section-link {
+        font-size: 14px; /* Уменьшение размера текста кнопки */
+        padding: 8px 16px; /* Уменьшение внутреннего отступа */
+    }
+}
+
+/* --- Адаптация для мобильных устройств (до 768px) --- */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 24px; /* Ещё меньше заголовок */
+    }
+
+    .section-content {
+        font-size: 14px; /* Уменьшение текста */
+        line-height: 1.4; /* Уменьшение межстрочного интервала */
+    }
+
+    .section-image {
+        max-width: 300px; /* Минимальный размер изображения */
+        max-height: 200px; /* Минимальная высота */
+    }
+
+    .section-link {
+        font-size: 12px; /* Минимальный размер текста кнопки */
+        padding: 6px 12px; /* Ещё меньше отступы */
+    }
+}
+
+/* --- Адаптация для очень маленьких экранов (до 480px) --- */
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 20px; /* Минимальный размер заголовка */
+    }
+
+    .section-content {
+        font-size: 12px; /* Минимальный размер текста */
+    }
+
+    .section-link {
+        font-size: 10px; /* Минимальный размер текста кнопки */
+        padding: 5px 10px; /* Минимальные отступы */
+    }
+}
